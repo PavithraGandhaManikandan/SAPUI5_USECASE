@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Component List plugin OPA5 tests</title>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge' />
+    <meta charset="UTF-8">
+
+    <script id="sap-ui-bootstrap"
+            src="/ui-lib/resources/sap-ui-core.js"
+            data-sap-ui-debug="true"
+            data-sap-ui-compatVersion="edge"
+            data-sap-ui-theme="sap_belize_plus"
+            data-sap-ui-bindingSyntax="complex"
+            data-sap-ui-resourceroots='{
+              "sap.dm.dme.oeetransactionpodplugin.test" : "/dme/oeetransactionpodplugin/test"
+          }'>
+    </script>
+
+    <script>
+            sap.ui.require(["sap/dm/dme/test/integration/util/OpaUtil"], function(OpaUtil) {
+                OpaUtil.launchTestSuite("sap/dm/dme/oeetransactionpodplugin/test/integration/ordersList/AllJourneys");
+            });
+        </script>
+
+</head>
+<body>
+<div id="qunit"></div>
+<div id="qunit-fixture"></div>
+</body>
+</html>
