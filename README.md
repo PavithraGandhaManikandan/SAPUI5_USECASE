@@ -15,11 +15,11 @@ https://sapui5.hana.ondemand.com/sdk/#/topic/91f2eba36f4d1014b6dd926db0e91070
 
 Refer to the Order_Details.json
 
-![img_2.png](img_2.png)
+![img_2.png](ui5exercise/images/img_2.png)
 
 **4.  Add a toggle button in master page (next to search bar) that controls the visibility of shipping information in detail page**
 
-![img.png](img.png)
+![img.png](ui5exercise/images/img.png)
 
 ### Important Points
 
