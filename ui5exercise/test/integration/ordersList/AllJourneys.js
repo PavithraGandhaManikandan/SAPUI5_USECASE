@@ -5,7 +5,7 @@ sap.ui.require([
 ], function (Opa5, Arrangements, MockServer) {
     "use strict";
 
-    QUnit.module("Speed Loss List", function (hooks) {
+    QUnit.module("Orders List", function (hooks) {
         hooks.before(function (assert) {
             var loadingDone = assert.async();
 
@@ -15,18 +15,17 @@ sap.ui.require([
 
             // This mock server is used when the app is started as Component
             MockServer.init({
-                sManifestPath: "sap/dm/dme/pod/manifest.json",
+                sManifestPath: "ui5exercise/manifest.json",
                 oRequestMappingConfig: {
-                    appMappingConfig: "sap/dm/dme/oeetransactionpodplugin/test/integration/speedLossOrderList/mock/speedLossOrderListRequestMapping.json",
+                    appMappingConfig: "ui5exercise/test/integration/ordersList/mock/orderListRequestMapping.json",
                     supplementalConfigs: [
-                        "sap/dm/dme/oeetransactionpodplugin/test/integration/mock/dependentRequestMapping.json"
                     ]
                 },
-                sMockDataFolderPath: "sap/dm/dme/oeetransactionpodplugin/test/integration/speedLossOrderList/mock/mockData/"
+                sMockDataFolderPath: "ui5exercise/test/integration/ordersList/mock/mockData/"
             });
 
             sap.ui.require([
-            "sap/dm/dme/oeetransactionpodplugin/test/integration/speedLossOrderList/pages/SpeedLossDetailPage"
+            "ui5exercise/test/integration/ordersList/pages/ordersListPage"
             // Placing the Journey within a callback will guarantee that the required files are loaded prior
            // to launching the Journey.
             ], function () {
@@ -35,7 +34,7 @@ sap.ui.require([
         });
 
         sap.ui.require([
-           "sap/dm/dme/oeetransactionpodplugin/test/integration/speedLossOrderList/SpeedLossJourneyWithValidResource"
+           "ui5exercise/test/integration/ordersList/OrdersJourney"
         ]);
     });
 });

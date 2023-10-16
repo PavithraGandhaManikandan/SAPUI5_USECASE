@@ -12,13 +12,13 @@
             data-sap-ui-theme="sap_belize_plus"
             data-sap-ui-bindingSyntax="complex"
             data-sap-ui-resourceroots='{
-              "sap.dm.dme.oeetransactionpodplugin.test" : "/dme/oeetransactionpodplugin/test"
+              "ui5exercise.test" : "/ui5exercise/test"
           }'>
     </script>
 
     <script>
             sap.ui.require(["sap/dm/dme/test/integration/util/OpaUtil"], function(OpaUtil) {
-                OpaUtil.launchTestSuite("sap/dm/dme/oeetransactionpodplugin/test/integration/ordersList/AllJourneys");
+                OpaUtil.launchTestSuite("ui5exercise/test/integration/ordersList/AllJourneys");
             });
         </script>
 

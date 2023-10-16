@@ -4,7 +4,7 @@ sap.ui.define([
     ], function (opaTest, Opa5) {
     "use strict";
 
-    QUnit.module("Downtime plugin", function () {
+    QUnit.module("Orders List", function () {
      //Add tests
 
     });
